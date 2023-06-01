@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>DigitalSupermarket</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/iconos.png">
+    <!-- Stylesheets & Fonts -->    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700"
+        rel="stylesheet">
+    <!-- Plugins Stylesheets -->
+    <link rel="stylesheet" href="assets/css/loader2/loaders.css">
+    <link rel="stylesheet" href="assets/css/font-awesome2/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/bootstrap2.css">
+    <link rel="stylesheet" href="assets/css/aos2/aos.css">
+    <link rel="stylesheet" href="assets/css/swiper2/swiper.css">
+    <link rel="stylesheet" href="assets/css/lightgallery2.min.css">
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="assets/css/responsive2.css">
+    <style>
+        .chat-tab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00a8ff;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+
+        .chat-tab:hover {
+            background-color: #0096d6;
+        }
+
+        .chat-tab-icon {
+            width: 30px;
+            height: 30px;
+            background-image: url('chat-icon.png'); /* Reemplaza con la ruta de tu icono de chat */
+            background-size: cover;
+        }
+
+        .chat-window {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .chat-header {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .chat-body {
+            padding: 10px;
+            height: 85%;
+            overflow-y: scroll;
+        }
+
+        .chat-input {
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        .chat-input input[type="text"] {
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loader Start -->
+    <div class="css-loader">
+        <div class="loader-inner line-scale d-flex align-items-center justify-content-center"></div>
+    </div>
+    <!-- Loader End -->
+    <!-- Header Start -->
+    <header class="position-absolute w-100">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logos.png" style="width: 100px; height: auto;" alt="Multipurpose"></a>
+                <div class="group d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Taller de software</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Taller de hardware</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ciberseguridad.html">Ciberseguridad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Construye tu pc</a></li>
+                        <li class="nav-item"><a class="nav-link" href="telematica.pnc.edu.gt/">Instalaciones de cableado</a></li>
+                        <li class="nav-item"><a class="nav-link" href="educa.pnc.edu.gt">Capacítate con nosotros</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Hero Sta   rt -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 offset-md-1 col-md-11">
+                    <div class="swiper-container hero-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-content d-flex align-items-center">
+                                <div class="single-slide">
+                                    <h1 data-aos="fade-right" data-aos-delay="200">DIGITAL<br> SUPERMARKET
+                                    </h1>
+                                    <p data-aos="fade-right" data-aos-delay="600">¿En qué podemos apoyarte?
+                                        Recibirás apoyo tanto por tutoriales, como también en tiempo real por medio de nuestro ChatBot.
+                                    </p>       
+                                    <a data-aos="fade-right" data-aos-delay="900" href="#trust" class="btn btn-primary">Ayuda Ahora</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-content d-flex align-items-center">
+                                <div class="single-slide">
+                                    <h1 data-aos="fade-right" data-aos-delay="200">DIGITAL<br> SUPERMARKET
+                                    </h1>
+                                    <p data-aos="fade-right" data-aos-delay="600">¿En qué podemos apoyarte?
+                                        Recibirás apoyo tanto por tutoriales como también en tiempo real por medio de nuestro ChatBot.
+                                    </p>
+                                    <a data-aos="fade-right" data-aos-delay="900" href="#trust" class="btn btn-primary">Ayuda Ahora</a> 
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Add Control -->
+            <span class="arr-left"><i class="fa fa-angle-left"></i></span>
+            <span class="arr-right"><i class="fa fa-angle-right"></i></span>
+        </div>
+        <div class="texture"></div>
+        <div class="diag-bg"></div>
+    </section>
+ 
+    <!-- Hero End -->
+    <!-- Call To Action Start -->
+
+    <!-- Call To Action End -->
+    <!-- Services Start -->
+    <section class="trust" id="trust">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-1 col-xl-6" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                    <div class="title">
+                        <h6 class="title-primary">CHATBOT</h6>
+                        <h1>¿Tienes alguna duda?</h1>
+                    </div>
+                    <p>Nuestro ChatBot te contestará de forma inmediata.
+                    </p>
+                    <form id="gpt3-form">
+            <div class="form-group">   
+                <input class="form-control" id="prompt" placeholder="Ingresa tu duda acá" name="prompt" rows="1">
+            </div>
+            <button type="submit" class="btn btn-primary">Obtener respuesta</button>
+        </form>
+        <div id="gpt3-response" class="mt-3"></div>
+                </div>
+                <div class="col-xl-5 gallery">
+                    <div class="row no-gutters h-100" id="lightgallery">
+                            <img  src="assets/images/gallery1.jpg" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Start -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
+                    <div class="title">
+                        <h6 class="title-primary">Acerca de Nosotros</h6>
+                        <h1 class="title-blue">¿Cuál es nuestro objetivo?</h1>
+                    </div>
+                    <p>Somos una empresa dedicada a brindar soluciones y solventar dudas relacionadas con equipos computacionales. Nuestro objetivo principal es ayudar a las personas a resolver problemas y maximizar el rendimiento de sus dispositivos. <br>
+  Contamos con un equipo de expertos en hardware y software, quienes poseen amplios conocimientos en diversas áreas de la tecnología. Estamos comprometidos en ofrecer un servicio de calidad y atención personalizada a nuestros clientes. <br>
+   <a href="#featured" class="btn btn-primary">Ver Más</a></p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
+                    <div class="featured-img">
+                        <img class="featured-big" src="assets/images/no1.jpg" width="100%" alt="Featured 1">
+                        <img class="featured-small" src="assets/images/no2.png" width="50%" alt="Featured 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured End -->
+    <!-- Recent Posts Start -->
+    <!-- Trust End -->
+    <!-- Pricing Start -->
+    <section class="pricing-table" id="pricing-table">
+        <div class="container">
+            <div class="title text-center">
+                <h6 class="title-primary">Nuestros planes</h6>
+                <h1 class="title-blue">TABLA DE PRECIOS</h1>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <div class="single-pricing text-center" data-aos="fade-up" data-aos-delay="0"
+                        data-aos-duration="600">
+                        <span>Al Mes</span>
+                        <h2>Básico</h2>
+                        <p class="desc">Este plan le ofrece resolver la cantidad de: 100 dudas al mes a tráves de nuestro ChatBot</p>
+                        <p class="price">Q64.00</p>
+                        <p>Cree una cuenta para poder adquirir el plan Inicial</p>
+                        <a href="#" class="btn btn-primary">¡Comprar Ahora!</a>
+                        <svg viewBox="0 0 170 193">
+                            <path fill-rule="evenodd" fill="rgb(238, 21, 21)"
+                                d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-pricing text-center" data-aos="fade-up" data-aos-delay="300"
+                        data-aos-duration="600">
+                        <span>Al Mes</span>
+                        <h2>Avanzado</h2>
+                        <p class="desc">Este plan le ofrece resolver la cantidad de: Ilimitadas dudas al mes a tráves de nuestro ChatBot</p>
+                        <p class="price">Q128.00</p>
+                        
+                        <p>Cree una cuenta para poder adquirir el plan Inicial</p>
+                        <a href="#" class="btn btn-primary">¡Comprar Ahora!</a>
+                        <svg viewBox="0 0 170 193">
+                            <path fill-rule="evenodd" fill="rgb(238, 21, 21)"
+                                d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-pricing text-center" data-aos="fade-up" data-aos-delay="600"
+                        data-aos-duration="600">
+                        <span>Al Mes</span>
+                        <h2>Intermedio</h2>
+                        <p class="desc">Este plan le ofrece resolver la cantidad de: 500 dudas al mes a tráves de nuestro ChatBot</p>
+                        <p class="price">Q86.00</p>
+                        <p>Cree una cuenta para poder adquirir el plan Inicial</p>
+                        <a href="#" class="btn btn-primary">¡Comprar Ahora!</a>
+                        <svg viewBox="0 0 170 193">
+                            <path fill-rule="evenodd" fill="rgb(238, 21, 21)"
+                                d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing End -->
+    <!-- Testimonial and Clients Start -->
+    <section class="testimonial-and-clients" id="testimonial-and-clients">
+        <div class="container">
+            <div class="testimonials">
+                <div class="swiper-container test-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center">
+                            <div class="row">
+                                <div class="offset-lg-1 col-lg-10">
+                                    <div class="test-img" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0"><img
+                                            src="assets/images/t3.JPG" alt="Testimonial 1"></div>
+                                    <h5 data-aos="fade-up" data-aos-delay="200" data-aos-duration="600"
+                                        data-aos-offset="0">Junajpu Conos</h5>
+                                    <span data-aos="fade-up" data-aos-delay="400" data-aos-duration="600"
+                                        data-aos-offset="0">Backend Jr.</span>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600"
+                                        data-aos-offset="0">Hola a todos, me gustaría compartir mi breve testimonio como desarrollador backend junior. Comencé mi carrera en la programación con mucha pasión y determinación. Aunque tenía conocimientos básicos de programación, sabía que había mucho por aprender y experimentar en el mundo del desarrollo web.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <div class="row">
+                                <div class="offset-lg-1 col-lg-10">
+                                    <div class="test-img" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0"><img
+                                            src="assets/images/t2.JPG" alt="Testimonial 1"></div>
+                                    <h5 data-aos="fade-up" data-aos-delay="200" data-aos-duration="600"
+                                        data-aos-offset="0">Oswaldo Sajcabun</h5>
+                                    <span data-aos="fade-up" data-aos-delay="400" data-aos-duration="600"
+                                        data-aos-offset="0">Mantenimiento de Computadoras</span>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600"
+                                        data-aos-offset="0">Profesional encargado de supervisar y coordinar las actividades relacionadas con el mantenimiento y reparación de sistemas informáticos. Su principal objetivo es asegurar el correcto funcionamiento de los equipos y garantizar la disponibilidad de los recursos tecnológicos necesarios para el desempeño eficiente de las tareas en una organización.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <div class="row">
+                                <div class="offset-lg-1 col-lg-10">
+                                    <div class="test-img" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0"><img
+                                            src="assets/images/t1.JPG" alt="Testimonial 1"></div>
+                                    <h5 data-aos="fade-up" data-aos-delay="200" data-aos-duration="600"
+                                        data-aos-offset="0">Claudia Contreras</h5>
+                                    <span data-aos="fade-up" data-aos-delay="400" data-aos-duration="600"
+                                        data-aos-offset="0">Frontend Jr.</span>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600"
+                                        data-aos-offset="0">Profesional que se especializa en la creación de la interfaz de usuario de aplicaciones web. Su principal objetivo es convertir los diseños y las especificaciones visuales en código funcional, brindando una experiencia de usuario atractiva y eficiente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="test-pagination"></div>
+                </div>
+            </div>
+   
+        </div>
+    </section>
+    <!-- Testimonial and Clients End -->
+    <!-- Call To Action 2 Start -->
+
+    <!-- Call To Action 2 End -->
+    <!-- Footer Start -->
+    <footer>
+        <!-- Widgets Start -->
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="single-widget tags-widget" data-aos="fade-up" data-aos-delay="800">
+                            <h6 class="widget-tiltle">Etiquetas Populares</h6>
+                            <a href="#">Computadoras</a>
+                            <a href="#">Diseño</a>
+                            <a href="#">Photoshop</a>
+                            <a href="#">Programación</a>
+                            <a href="#">Wordpress</a>
+                            <a href="#">Bases de Datos</a>
+                        </div>
+                        <div class="single-widget subscribe-widget" data-aos="fade-up" data-aos-delay="800">
+                            <p>Respetamos tu privacidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Widgets End -->
+        <!-- Foot Note Start -->
+        <div class="foot-note">
+            <div class="container">
+                <div
+                    class="footer-content text-center text-lg-left d-lg-flex justify-content-between align-items-center">
+                    <p class="mb-0" data-aos="fade-right" data-aos-offset="0">&copy; 2023. Todos los derechos reservados. Rediseñado por Selvin Emanuel López Pablo.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Foot Note End -->
+    </footer>
+    <!-- Footer Endt -->
+    <!--jQuery-->
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <!--Plugins-->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/loaders.css.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/lightgallery-all.min.js"></script>
+    <!--Template Script-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
