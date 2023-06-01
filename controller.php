@@ -14,7 +14,7 @@ URL: https://beta.openai.com/docs/models/gpt-3
 
 // Establece el ID de tu modelo de GPT-3 y la clave de API
 $model_id = "text-davinci-003";
-$api_key = "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";
+$api_key = "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";
 
 // Recibe el prompt enviado por el usuario
 $prompt = $_POST['prompt'];
